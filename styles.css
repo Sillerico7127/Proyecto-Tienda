@@ -67,6 +67,50 @@ footer {
     color: #7f8c8d;
 }
 
+.boton-modo {
+    margin-top: 14px;
+    background-color: rgb(56, 15, 152);
+    padding: 15px;
+    color: #c0d4d4;
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    font-weight: bold;
+    
+}
+
+
+body.claro {
+    background-color: #f0f4f8; 
+    color: #1a202c;            
+}
+
+body.claro header {
+    background-color: rgb(44, 193, 151);
+    color: #ffffff; 
+}
+
+body.claro nav a {
+    color: #ffffff; 
+}
+
+body.claro section {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    color: #1a202c;
+}
+
+body.claro .tarjeta {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+    color: #1a202c;
+}
+
+body.claro h2, body.claro p {
+    color: #1a202c;
+}
+
+
 
 @media (max-width: 600px) {
     nav ul {
