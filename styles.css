@@ -15,6 +15,11 @@ header {
     text-align: center;
     margin-bottom: 25px;
 }
+
+#btn-menu {
+        display: none;
+    }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -110,14 +115,8 @@ body.claro h2, body.claro p {
     color: #1a202c;
 }
 
-
-
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
+   
 
     header {
       flex-direction: column;
@@ -142,4 +141,31 @@ body.claro h2, body.claro p {
     section {
         padding: 10px;
     }
+
+ #btn-menu {
+        display: block; 
+    }
+ .hamburguesa {
+        margin: 0 auto 8px;
+        background-color: #16381a;
+        color: #cfe3d1;
+        border: 1px solid #2b4530;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font: inherit;
+        font-weight: bold;
+    }
+     nav ul {
+        display: none;
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+  nav ul.abierto {
+        display: block; 
+    }
+ 
+
 }
