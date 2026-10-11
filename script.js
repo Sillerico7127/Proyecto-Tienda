@@ -6,9 +6,9 @@ function alternarModo(){
     esDeDia = !esDeDia;
     
     if(esDeDia){
-        botonModo.textContent = " ☀️Modo Dia"; 
+        botonModo.textContent = " 🌙Ir a Modo Noche"; 
     } else {
-        botonModo.textContent = " 🌙 Modo Noche"; 
+        botonModo.textContent = " ☀️Ir a Modo Dia"; 
     }
 }
 botonModo.addEventListener("click", alternarModo);
