@@ -91,6 +91,10 @@ footer {
     
 }
 
+.formulario-contacto button {
+    width: 180px;
+}
+
 
 body.claro {
     background-color: #f0f4f8; 
@@ -174,6 +178,10 @@ body.claro h2, body.claro p {
   nav ul.abierto {
         display: block; 
     }
+
+    .formulario-contacto button {
+    width: fit-content;
+}
  
 
 }
