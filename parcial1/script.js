@@ -21,6 +21,13 @@ function alternarMenu(){
     menu.classList.toggle("abierto");    
 }
 botonMenu.addEventListener("click", alternarMenu);
+
 const botonConfirmar = document.querySelector("#btn-confirmar");
 const mensajeParrafo = document.querySelector("#mensaje");
 
+function confirmarPedido() {
+    mensajeParrafo.textContent = "Pedido confirmado - te atiende Esther Sillerico Herrera";
+    mensajeParrafo.classList.remove("oculto");
+}
+
+botonConfirmar.addEventListener("click", confirmarPedido);
