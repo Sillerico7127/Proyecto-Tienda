@@ -26,7 +26,7 @@ const botonConfirmar = document.querySelector("#btn-confirmar");
 const mensajeParrafo = document.querySelector("#mensaje");
 
 function confirmarPedido() {
-    mensajeParrafo.textContent = "Pedido confirmado - te atiende Esther Sillerico Herrera";
+    mensajeParrafo.textContent = "Pedido confirmado - te atiende Gracia Esther Sillerico Herrera";
     mensajeParrafo.classList.remove("oculto");
 }
 

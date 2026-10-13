@@ -1,17 +1,16 @@
 
-
 body {
     font-family: sans-serif;
-    background-color: #ccd5e1; 
-    color: #ffffff;
+    background-color: #293e30; 
+    color: #f7dada;
     line-height: 1.6;
     padding: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 header {
-    background-color: #111923;
+    background-color: #131d2a;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -24,6 +23,7 @@ header {
 
 nav {
     background-color: #0f2a12;
+    color: #ffffff;
     padding: 10px 0;
     margin-bottom: 25px;
     border-radius: 12px;
@@ -47,7 +47,7 @@ nav a {
 }
 
 section {
-    background-color: #243145; 
+    background-color: #131d2a; 
     padding: 25px;           
     margin-bottom: 25px;
     border: 1px solid #34445c; 
@@ -74,7 +74,7 @@ footer {
 
 .boton-modo {
     margin-top: 14px;
-    background-color: rgb(56, 15, 152);
+    background-color: rgb(4, 103, 48);
     padding: 15px;
     color: #c0d4d4;
     border: none;
@@ -85,7 +85,7 @@ footer {
 
 #btn-confirmar {
     margin-top: 15px;
-    background-color: #2b4530;
+    background-color: rgb(4, 103, 48);
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -106,14 +106,18 @@ body.claro {
 
 body.claro header {
     background-color: rgb(44, 193, 151);
-    color: #ffffff; 
+    color: #0b0b0b; 
 }
 
-body.claro nav {
+body.claro nav  {
     background-color: rgb(44, 193, 151);
-    color: #ffffff; 
+    color: #0e0e0e; 
 }
 
+body.claro nav a  {
+    
+    color: #0e0e0e; 
+}
 body.claro section {
     background-color: #ffffff;
     border-color: #cbd5e1;
@@ -122,6 +126,18 @@ body.claro section {
 
 body.claro h2, body.claro p, body.claro label {
     color: #1a202c;
+}
+
+
+body.claro #btn-confirmar {
+    background-color: rgb(44, 193, 151);
+    color: #ffffff;           
+    border: 1px solid #0b6810; 
+}
+body.claro .hamburguesa {
+    background-color: rgb(16, 124, 94);
+    color: #ffffff;            
+    border: 1px solid #0b6810;  
 }
 
 @media (max-width: 600px) {
