@@ -127,6 +127,29 @@ body.claro h2, body.claro p {
     color: #1a202c;
 }
 
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+  
+}
+
+.aviso.error {
+    display: block;
+    background-color: #dd8c8c;
+    color: #c7200a;
+    border-left: 4px solid #e05555;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #63dbc9;
+    color: #151816;
+    border-left: 4px solid #3fbf6a;
+}
+
+
 @media (max-width: 600px) {
    
 

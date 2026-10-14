@@ -47,7 +47,7 @@
         <p>Direccion: Av. Buenos Aires 1020, Zona Alto San Pedro</p>
         <p>Esther Cel. 78987876</p>
 
-           <form class="formulario-contacto">
+           <form id="form-pedido" novalidate class="formulario-contacto">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
                 
@@ -58,6 +58,7 @@
                 <textarea id="mensaje" name="mensaje" placeholder="¿Qué prenda estás buscando?" rows="3" required></textarea>
                 
                 <button type="submit">Enviar Mensaje</button>
+                <p id="aviso-pedido" class="aviso"></p>
             </form>
         </section>
     </main>
