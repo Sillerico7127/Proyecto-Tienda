@@ -3,15 +3,35 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Producto;
+use App\Models\Contacto;
 
 // 1. Ruta Inicio
+Route::get('/', function () {
+    return redirect('/inicio');
+});
 Route::get('/inicio', function () {
     return view('inicio');
 });
 
-// 2. Ruta Contacto (Muestra el formulario de pedidos/contacto)
 Route::get('/contacto', function () {
     return view('contacto');
+});
+// 2. Ruta Contacto (Muestra el formulario de pedidos/contacto)
+Route::post('/contacto', function () {
+    request()->validate([
+        'nombre' => 'required',
+        'correo' => 'required|email',
+        'mensaje' => 'required',
+    ]);
+
+    Contacto::create([
+        'nombre' => request()->input('nombre'),
+        'correo' => request()->input('correo'),
+        'mensaje' => request()->input('mensaje'),
+    ]);
+
+    
+    return back()->with('success', '¡Gracias por escribirnos! Nos contactaremos contigo lo más pronto posible.');
 });
 
 // 3. Ruta Productos (Vitrina pública que muestra todos los productos)
