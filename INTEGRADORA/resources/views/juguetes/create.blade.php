@@ -17,7 +17,7 @@
 
         <button type="submit">Registrar juguete</button>
 
-        <!-- Recuadro con los mensajes en la parte inferior del botón -->
+        // PARA LA VISUALIZACION DEL MENSAJE
         @if ($errors->any())
             <div style="background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; padding: 10px 15px; border-radius: 4px; margin-top: 15px;">
                 <ul style="margin: 0; padding-left: 20px;">
